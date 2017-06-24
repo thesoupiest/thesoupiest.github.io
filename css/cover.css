@@ -27,12 +27,14 @@ a:hover {
 html,
 body {
   height: 100%;
-  background-color: #333;
+  background: #ECE9E6;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, #FFFFFF, #ECE9E6);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #FFFFFF, #ECE9E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 body {
-  color: #fff;
+  color: #313438;
   text-align: center;
-  text-shadow: 0 1px 3px rgba(0,0,0,.5);
 }
 
 /* Extra markup and styles for table-esque vertical and horizontal centering */
@@ -111,10 +113,14 @@ body {
 
 .cover {
   padding: 0 20px;
+  border: 4px solid black;
 }
 .cover .btn-lg {
-  padding: 10px 20px;
+  padding: 15px 30px;
   font-weight: bold;
+}
+.cover .btn-lg:hover {
+  filter: brightness(90%);
 }
 
 
@@ -123,8 +129,7 @@ body {
  */
 
 .mastfoot {
-  color: #999; /* IE8 proofing */
-  color: rgba(255,255,255,.5);
+  color: #313438;
 }
 
 
